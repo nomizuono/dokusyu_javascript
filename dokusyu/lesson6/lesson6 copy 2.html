@@ -13,7 +13,14 @@
         console.log("_____________________________");
         function fn(){};    //空の関数を定義
 
-        fn.fullname = "独習花子";   //オブジェクトのようにプ
+        fn.fullname = "独習花子";   //オブジェクトのようにプロパティの追加ができる
+
+        fn.hello = function(){      //メソッド追加も可能
+            console.log("こんにちは、独習花子");
+        };
+
+        console.log(fn.fullname);   //プロパティの取得
+        fn.hello()                  //メソッドの実行
 
     </script>
 </body>
